@@ -10,7 +10,7 @@ cleanDataFebruary <- subset(cleanDataFeb, newdate < "2007-02-03 00:00:00")
 
 #cleanDataFebruary$newdate <- weekdays(as.Date(cleanDataFebruary$newdate))
 
-plot(cleanDataFebruary$Global_active_power, ylab="Global active power (kilowatts)", xaxt='n', type='l', xlab="") 
+plot(cleanDataFebruary$Global_active_power, ylab="Global Active Power (kilowatts)", xaxt='n', type='l', xlab="") 
 axis(1, at=c(1,nrow(cleanDataFebruary)/2,nrow(cleanDataFebruary)),labels=c("Thu","Fri","Sat"))
 
 dev.copy(png, "Plot2.png")
